@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Примеры PWA — PWA Info</title>
+  <link rel="stylesheet" href="css/tent.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="masthead bg-color-lightest padding-y">
+    <div class="container">
+      <div class="grid grid--center">
+        <div class="grid__column grid__column--6">
+          <a href="index.html" class="color-primary type-bold title title--md">PWA Info</a>
+        </div>
+        <div class="grid__column grid__column--6 type-right">
+          <button class="button button--clear button--sm header__burger" aria-label="Меню">☰</button>
+        </div>
+      </div>
+      <nav class="header__nav padding-y-sm" id="nav">
+        <ul class="list list--inline list--nulled type-center">
+          <li class="list__item"><a href="index.html">Главная</a></li>
+          <li class="list__item"><a href="what-is-pwa.html">Что такое PWA</a></li>
+          <li class="list__item"><a href="service-workers.html">Service Workers</a></li>
+          <li class="list__item"><a href="manifest.html">Manifest</a></li>
+          <li class="list__item"><a href="caching.html">Кэширование</a></li>
+          <li class="list__item"><a href="offline.html">Офлайн</a></li>
+          <li class="list__item"><a href="cases.html" class="color-primary type-bold">Примеры</a></li>
+          <li class="list__item"><a href="resources.html">Ресурсы</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container padding-y padding-lg">
+    <div class="grid">
+
+      <main class="grid__column grid__column--12 grid__column--8--md">
+
+        <div class="title-set">
+          <h1 class="title title--xl">Примеры PWA</h1>
+          <p class="subtitle subtitle--md">Кто уже использует технологию</p>
+        </div>
+
+        <p class="lead">PWA используют крупные компании по всему миру — от соцсетей до банков. Ниже — самые известные кейсы и то, что они получили от перехода на прогрессивные веб-приложения.</p>
+
+        <div class="grid padding-y-sm">
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <div class="card card--outlined card--primary color-primary height-full">
+              <div class="card__content">
+                <h2 class="card__title">Uber</h2>
+                <p>Uber создал PWA для водителей и пассажиров в слабых сетях. Поездки можно заказывать без стабильного интернета.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <div class="card card--outlined card--secondary color-secondary height-full">
+              <div class="card__content">
+                <h2 class="card__title">Starbucks</h2>
+                <p>Заказы офлайн, экономия на размере.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid padding-y-sm">
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <div class="card card--outlined card--tertiary color-tertiary height-full">
+              <div class="card__content">
+                <h2 class="card__title">Pinterest</h2>
+                <p>Рост вовлечённости после перехода на PWA.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <div class="card card--outlined card--primary color-primary height-full">
+              <div class="card__content">
+                <h2 class="card__title">Банки РФ</h2>
+                <p>Сбербанк, Тинькофф и ВТБ используют PWA как альтернативу приложениям, удалённым из сторов. Клиенты получают полный доступ к счетам, переводам и push-уведомлениям прямо из браузера.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="title title--md padding-y margin-xs">Что общего у этих кейсов</h2>
+        <ul class="list">
+          <li class="list__item">Работа офлайн</li>
+          <li class="list__item">Установка без сторов</li>
+          <li class="list__item">Единый код для всех платформ</li>
+        </ul>
+
+      </main>
+
+      <aside class="grid__column grid__column--12 grid__column--4--md">
+        <div class="card card--outlined">
+          <div class="card__content">
+            <h3 class="card__title color-primary">Разделы</h3>
+            <ul class="list list--unstyled">
+              <li class="list__item"><a href="what-is-pwa.html">Что такое PWA</a></li>
+              <li class="list__item"><a href="service-workers.html">Service Workers</a></li>
+              <li class="list__item"><a href="manifest.html">Manifest</a></li>
+              <li class="list__item"><a href="caching.html">Кэширование</a></li>
+              <li class="list__item"><a href="offline.html">Офлайн</a></li>
+              <li class="list__item"><a href="cases.html">Примеры</a></li>
+              <li class="list__item"><a href="resources.html">Ресурсы</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card card--filled card--primary inverse">
+          <div class="card__content">
+            <h3 class="card__title inverse">Подписка</h3>
+            <p>Новости о PWA раз в месяц. Без спама.</p>
+            <form class="type-center">
+              <div class="control control--block">
+                <input class="control__input" type="email" placeholder="Email" required>
+              </div>
+              <input class="button button--filled button--secondary" type="submit" value="Подписаться">
+            </form>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="mastfoot bg-color-darkest inverse padding-y padding-lg">
+    <div class="container">
+      <div class="grid">
+        <div class="grid__column grid__column--12 grid__column--4--md">
+          <h4 class="title title--sm">PWA Info</h4>
+          <p class="type-small">Учебный проект о прогрессивных веб-приложениях.</p>
+        </div>
+        <div class="grid__column grid__column--12 grid__column--4--md">
+          <h4 class="title title--sm">Контакты</h4>
+          <p class="type-small"><a href="mailto:student@example.com" class="inverse">student@example.com</a></p>
+        </div>
+        <div class="grid__column grid__column--12 grid__column--4--md">
+          <h4 class="title title--sm">Ссылки</h4>
+          <ul class="list list--unstyled type-small">
+            <li class="list__item"><a href="resources.html" class="inverse">Ресурсы</a></li>
+            <li class="list__item"><a href="cases.html" class="inverse">Примеры PWA</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="margin-y">
+      <p class="type-center type-small">© 2026 PWA Info.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

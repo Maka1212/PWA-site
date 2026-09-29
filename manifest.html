@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manifest — PWA Info</title>
+  <link rel="stylesheet" href="css/tent.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="masthead bg-color-lightest padding-y">
+    <div class="container">
+      <div class="grid grid--center">
+        <div class="grid__column grid__column--6">
+          <a href="index.html" class="color-primary type-bold title title--md">PWA Info</a>
+        </div>
+        <div class="grid__column grid__column--6 type-right">
+          <button class="button button--clear button--sm header__burger" aria-label="Меню">☰</button>
+        </div>
+      </div>
+      <nav class="header__nav padding-y-sm" id="nav">
+        <ul class="list list--inline list--nulled type-center">
+          <li class="list__item"><a href="index.html">Главная</a></li>
+          <li class="list__item"><a href="what-is-pwa.html">Что такое PWA</a></li>
+          <li class="list__item"><a href="service-workers.html">Service Workers</a></li>
+          <li class="list__item"><a href="manifest.html" class="color-primary type-bold">Manifest</a></li>
+          <li class="list__item"><a href="caching.html">Кэширование</a></li>
+          <li class="list__item"><a href="offline.html">Офлайн</a></li>
+          <li class="list__item"><a href="cases.html">Примеры</a></li>
+          <li class="list__item"><a href="resources.html">Ресурсы</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container padding-y padding-lg">
+    <div class="grid">
+
+      <main class="grid__column grid__column--12 grid__column--8--md">
+
+        <div class="title-set">
+          <h1 class="title title--xl">Web App Manifest</h1>
+          <p class="subtitle subtitle--md">Файл, который описывает установленное приложение</p>
+        </div>
+
+        <p class="lead">Manifest — это файл manifest.json. Он описывает, как приложение выглядит после установки.</p>
+
+        <h2 class="title title--md padding-y">Что содержит манифест</h2>
+        <table class="table table--stripped">
+          <thead class="table__head">
+            <tr class="table__row table__row--heading">
+              <th class="table__cell">Поле</th>
+              <th class="table__cell">Назначение</th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr class="table__row"><td class="table__cell"><code>name</code></td><td class="table__cell">Полное название</td></tr>
+            <tr class="table__row"><td class="table__cell"><code>short_name</code></td><td class="table__cell">Короткое название под иконкой</td></tr>
+            <tr class="table__row"><td class="table__cell"><code>icons</code></td><td class="table__cell">Набор иконок разных размеров</td></tr>
+            <tr class="table__row"><td class="table__cell"><code>start_url</code></td><td class="table__cell">Стартовая страница</td></tr>
+            <tr class="table__row"><td class="table__cell"><code>display</code></td><td class="table__cell">Режим отображения (standalone, fullscreen)</td></tr>
+            <tr class="table__row"><td class="table__cell"><code>theme_color</code></td><td class="table__cell">Цвет верхней панели</td></tr>
+            <tr class="table__row"><td class="table__cell"><code>background_color</code></td><td class="table__cell">Цвет фона при запуске</td></tr>
+          </tbody>
+        </table>
+
+        <h2 class="title title--md padding-y">Пример manifest.json</h2>
+        <div class="card card--outlined">
+          <div class="card__content">
+<pre><code>{
+  "name": "PWA Info",
+  "short_name": "PWA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0074d9",
+  "icons": [
+    { "src": "/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}</code></pre>
+          </div>
+        </div>
+
+        <h2 class="title title--md padding-y">Как подключить</h2>
+        <p>Внутри тега <code>&lt;head&gt;</code> добавьте:</p>
+        <div class="card card--outlined">
+          <div class="card__content">
+<code>&lt;link rel="manifest" href="manifest.json"&gt;</code>
+          </div>
+        </div>
+
+      </main>
+
+      <aside class="grid__column grid__column--12 grid__column--4--md">
+        <div class="card card--outlined">
+          <div class="card__content">
+            <h3 class="card__title color-primary">Разделы</h3>
+            <ul class="list list--unstyled">
+              <li class="list__item"><a href="what-is-pwa.html">Что такое PWA</a></li>
+              <li class="list__item"><a href="service-workers.html">Service Workers</a></li>
+              <li class="list__item"><a href="manifest.html">Manifest</a></li>
+              <li class="list__item"><a href="caching.html">Кэширование</a></li>
+              <li class="list__item"><a href="offline.html">Офлайн</a></li>
+              <li class="list__item"><a href="cases.html">Примеры</a></li>
+              <li class="list__item"><a href="resources.html">Ресурсы</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card card--filled card--primary inverse">
+          <div class="card__content">
+            <h3 class="card__title inverse">Подписка</h3>
+            <p>Новости о PWA раз в месяц. Без спама.</p>
+            <form >
+              <div class="control control--block">
+                <input class="control__input" type="email" placeholder="Email" required>
+              </div>
+              <input class="button button--filled button--secondary" type="submit" value="Подписаться">
+            </form>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="mastfoot bg-color-darkest inverse padding-y padding-lg">
+    <div class="container">
+      <div class="grid">
+        <div class="grid__column grid__column--12 grid__column--4--md">
+          <h4 class="title title--sm">PWA Info</h4>
+          <p class="type-small">Учебный проект о прогрессивных веб-приложениях.</p>
+        </div>
+        <div class="grid__column grid__column--12 grid__column--4--md">
+          <h4 class="title title--sm">Контакты</h4>
+          <p class="type-small"><a href="mailto:student@example.com" class="inverse">student@example.com</a></p>
+        </div>
+        <div class="grid__column grid__column--12 grid__column--4--md">
+          <h4 class="title title--sm">Ссылки</h4>
+          <ul class="list list--unstyled type-small">
+            <li class="list__item"><a href="resources.html" class="inverse">Ресурсы</a></li>
+            <li class="list__item"><a href="cases.html" class="inverse">Примеры PWA</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="margin-y">
+      <p class="type-center type-small">© 2026 PWA Info.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

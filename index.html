@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA Info — Всё о прогрессивных веб-приложениях</title>
+  <link rel="stylesheet" href="css/tent.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="masthead bg-color-lightest padding-y">
+    <div class="container">
+      <div class="grid grid--center">
+        <div class="grid__column grid__column--6">
+          <a href="index.html" class="color-primary type-bold title title--md">PWA Info</a>
+        </div>
+        <div class="grid__column grid__column--6 type-right">
+          <button class="button button--clear button--sm header__burger" aria-label="Меню">☰</button>
+        </div>
+      </div>
+      <nav class="header__nav padding-y-sm" id="nav">
+        <ul class="list list--inline list--nulled type-center">
+          <li class="list__item"><a href="index.html" class="color-primary type-bold">Главная</a></li>
+          <li class="list__item"><a href="what-is-pwa.html">Что такое PWA</a></li>
+          <li class="list__item"><a href="service-workers.html">Service Workers</a></li>
+          <li class="list__item"><a href="manifest.html">Manifest</a></li>
+          <li class="list__item"><a href="caching.html">Кэширование</a></li>
+          <li class="list__item"><a href="offline.html">Офлайн</a></li>
+          <li class="list__item"><a href="cases.html">Примеры</a></li>
+          <li class="list__item"><a href="resources.html">Ресурсы</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-color-primary inverse padding-y padding-xxxl gradient-back">
+    <div class="container">
+      <div class="grid grid--justify-center type-center">
+        <div class="grid__column grid__column--12 grid__column--8--md">
+          <div class="title-set">
+            <h1 class="title title--xxl">Прогрессивные Веб-Приложения</h1>
+            <p class="subtitle subtitle--lg">Быстрые, надёжные и устанавливаемые. Всё, что нужно знать о PWA.</p>
+          </div>
+          <p class="lead padding-y">PWA — это сайт, который работает как мобильное приложение. Открывается в браузере, но устанавливается на телефон, работает офлайн и отправляет push-уведомления.</p>
+          <a href="what-is-pwa.html" class="button button--filled button--primary">Начать изучение</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container padding-y padding-lg">
+    <div class="grid">
+
+      <main class="grid__column grid__column--12 grid__column--8--md">
+
+        <h2 class="title title--lg padding-y margin-xs">Ключевые возможности</h2>
+
+        <div class="grid padding-y-sm">
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <div class="card card--outlined card--primary color-primary height-full">
+              <div class="card__content">
+                <h3 class="card__title">⚡ Быстро</h3>
+                <p>Service Worker кэширует ресурсы, и повторные загрузки происходят мгновенно.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <div class="card card--outlined card--secondary color-secondary height-full">
+              <div class="card__content">
+                <h3 class="card__title">📴 Офлайн</h3>
+                <p>Приложение продолжает работать даже без подключения к интернету.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid padding-y-sm">
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <div class="card card--outlined card--tertiary color-tertiary height-full">
+              <div class="card__content">
+                <h3 class="card__title">📱 Устанавливаемо</h3>
+                <p>Пользователь добавляет иконку на главный экран в один клик.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <div class="card card--outlined card--primary color-primary height-full">
+              <div class="card__content">
+                <h3 class="card__title">🔔 Push-уведомления</h3>
+                <p>Как в нативном приложении — с разрешения пользователя.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="title title--md padding-y margin-xs">PWA и нативное приложение</h3>
+
+        <table class="table table--stripped">
+          <thead class="table__head">
+            <tr class="table__row table__row--heading">
+              <th class="table__cell">Критерий</th>
+              <th class="table__cell">PWA</th>
+              <th class="table__cell">Нативное</th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr class="table__row"><td class="table__cell">Установка</td><td class="table__cell">Через браузер</td><td class="table__cell">Магазин приложений</td></tr>
+            <tr class="table__row"><td class="table__cell">Обновление</td><td class="table__cell">Автоматически</td><td class="table__cell">Вручную</td></tr>
+            <tr class="table__row"><td class="table__cell">Размер</td><td class="table__cell">Менее 1 МБ</td><td class="table__cell">От 10 МБ</td></tr>
+            <tr class="table__row"><td class="table__cell">Разработка</td><td class="table__cell">HTML, CSS, JS</td><td class="table__cell">Swift, Kotlin</td></tr>
+          </tbody>
+        </table>
+
+        <h3 class="title title--md padding-y margin-xs">Видео: введение в PWA</h3>
+
+        <div class="card card--outlined">
+          <div class="card__content">
+            <div class="video-wrapper">
+              <iframe src="https://rutube.ru/play/embed/626a39d266747d2c808d026b2b4d425e/" allowfullscreen title="Введение в PWA"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <aside class="grid__column grid__column--12 grid__column--4--md">
+        <div class="card card--outlined">
+          <div class="card__content">
+            <h3 class="card__title color-primary">Разделы</h3>
+            <ul class="list list--unstyled">
+              <li class="list__item"><a href="what-is-pwa.html">Что такое PWA</a></li>
+              <li class="list__item"><a href="service-workers.html">Service Workers</a></li>
+              <li class="list__item"><a href="manifest.html">Manifest</a></li>
+              <li class="list__item"><a href="caching.html">Кэширование</a></li>
+              <li class="list__item"><a href="offline.html">Офлайн</a></li>
+              <li class="list__item"><a href="cases.html">Примеры</a></li>
+              <li class="list__item"><a href="resources.html">Ресурсы</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card card--filled card--primary inverse">
+          <div class="card__content">
+            <h3 class="card__title inverse">Подписка</h3>
+            <p>Новости о PWA раз в месяц. Без спама.</p>
+            <form class="type-center">
+              <div class="control control--block">
+                <input class="control__input" type="email" placeholder="Email" required>
+              </div>
+              <input class="button button--filled button--secondary" type="submit" value="Подписаться">
+            </form>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="mastfoot bg-color-darkest inverse padding-y padding-lg">
+    <div class="container">
+      <div class="grid">
+        <div class="grid__column grid__column--12 grid__column--4--md">
+          <h4 class="title title--sm">PWA Info</h4>
+          <p class="type-small">Учебный проект о прогрессивных веб-приложениях.</p>
+        </div>
+        <div class="grid__column grid__column--12 grid__column--4--md">
+          <h4 class="title title--sm">Контакты</h4>
+          <p class="type-small"><a href="mailto:student@example.com" class="inverse">student@example.com</a></p>
+        </div>
+        <div class="grid__column grid__column--12 grid__column--4--md">
+          <h4 class="title title--sm">Ссылки</h4>
+          <ul class="list list--unstyled type-small">
+            <li class="list__item"><a href="resources.html" class="inverse">Ресурсы</a></li>
+            <li class="list__item"><a href="cases.html" class="inverse">Примеры PWA</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="margin-y">
+      <p class="type-center type-small">© 2026 PWA Info.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

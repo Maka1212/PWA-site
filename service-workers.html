@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Workers — PWA Info</title>
+  <link rel="stylesheet" href="css/tent.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="masthead bg-color-lightest padding-y">
+    <div class="container">
+      <div class="grid grid--center">
+        <div class="grid__column grid__column--6">
+          <a href="index.html" class="color-primary type-bold title title--md">PWA Info</a>
+        </div>
+        <div class="grid__column grid__column--6 type-right">
+          <button class="button button--clear button--sm header__burger" aria-label="Меню">☰</button>
+        </div>
+      </div>
+      <nav class="header__nav padding-y-sm" id="nav">
+        <ul class="list list--inline list--nulled type-center">
+          <li class="list__item"><a href="index.html">Главная</a></li>
+          <li class="list__item"><a href="what-is-pwa.html">Что такое PWA</a></li>
+          <li class="list__item"><a href="service-workers.html" class="color-primary type-bold">Service Workers</a></li>
+          <li class="list__item"><a href="manifest.html">Manifest</a></li>
+          <li class="list__item"><a href="caching.html">Кэширование</a></li>
+          <li class="list__item"><a href="offline.html">Офлайн</a></li>
+          <li class="list__item"><a href="cases.html">Примеры</a></li>
+          <li class="list__item"><a href="resources.html">Ресурсы</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container padding-y padding-lg">
+    <div class="grid">
+
+      <main class="grid__column grid__column--12 grid__column--8--md">
+        <img src="images/service_worker-960.webp"
+          srcset="images/service_worker-480.webp 480w,
+          images/service_worker-960.webp 960w,
+          images/service_worker-1440.webp 1440w,
+          images/service_worker-1920.webp 1920w"
+          sizes="(max-width: 767px) 100vw,
+          (max-width: 991px) 90vw,70vw"
+          alt="Service Worker - скрипт"
+          title="Service Worker">
+        <div class="title-set">
+          <h1 class="title title--xl">Service Workers</h1>
+        </div>
+
+        <p class="lead">Service Worker — это скрипт, который работает в фоне. Он кэширует файлы, перехватывает запросы и позволяет приложению работать без интернета.</p>
+
+        <h2 class="title title--md padding-y">Что умеет Service Worker</h2>
+        <ul class="list">
+          <li class="list__item">Кэшировать HTML, CSS, JS и картинки</li>
+          <li class="list__item">Перехватывать сетевые запросы</li>
+          <li class="list__item">Работать офлайн</li>
+          <li class="list__item">Принимать push-уведомления</li>
+          <li class="list__item">Синхронизировать данные при возврате в онлайн</li>
+        </ul>
+
+        <h2 class="title title--md padding-y">Пример регистрации</h2>
+        <div class="card card--outlined">
+          <div class="card__content">
+<pre><code>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+    .then(() => console.log('SW зарегистрирован'))
+    .catch(err => console.error('Ошибка:', err));
+}</code></pre>
+          </div>
+        </div>
+      </main>
+
+      <aside class="grid__column grid__column--12 grid__column--4--md">
+        <div class="card card--outlined">
+          <div class="card__content">
+            <h3 class="card__title color-primary">Разделы</h3>
+            <ul class="list list--unstyled">
+              <li class="list__item"><a href="what-is-pwa.html">Что такое PWA</a></li>
+              <li class="list__item"><a href="service-workers.html">Service Workers</a></li>
+              <li class="list__item"><a href="manifest.html">Manifest</a></li>
+              <li class="list__item"><a href="caching.html">Кэширование</a></li>
+              <li class="list__item"><a href="offline.html">Офлайн</a></li>
+              <li class="list__item"><a href="cases.html">Примеры</a></li>
+              <li class="list__item"><a href="resources.html">Ресурсы</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card card--filled card--primary inverse">
+          <div class="card__content">
+            <h3 class="card__title inverse">Подписка</h3>
+            <p>Новости о PWA раз в месяц. Без спама.</p>
+            <form class="type-center">
+              <div class="control control--block">
+                <input class="control__input" type="email" placeholder="Email" required>
+              </div>
+              <input class="button button--filled button--secondary" type="submit" value="Подписаться">
+            </form>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="mastfoot bg-color-darkest inverse padding-y padding-lg">
+    <div class="container">
+      <div class="grid">
+        <div class="grid__column grid__column--12 grid__column--4--md">
+          <h4 class="title title--sm">PWA Info</h4>
+          <p class="type-small">Учебный проект о прогрессивных веб-приложениях.</p>
+        </div>
+        <div class="grid__column grid__column--12 grid__column--4--md">
+          <h4 class="title title--sm">Контакты</h4>
+          <p class="type-small"><a href="mailto:student@example.com" class="inverse">student@example.com</a></p>
+        </div>
+        <div class="grid__column grid__column--12 grid__column--4--md">
+          <h4 class="title title--sm">Ссылки</h4>
+          <ul class="list list--unstyled type-small">
+            <li class="list__item"><a href="resources.html" class="inverse">Ресурсы</a></li>
+            <li class="list__item"><a href="cases.html" class="inverse">Примеры PWA</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="margin-y">
+      <p class="type-center type-small">© 2026 PWA Info.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* Скрыть бургер на десктопе */
+.header__burger {
+  display: none;
+}
+
+/* На мобильных — показать бургер, скрыть меню */
+@media (max-width: 767px) {
+  .header__burger {
+    display: inline-block;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__nav.is-open {
+    display: block;
+  }
+
+  .header__nav .list {
+    display: block;
+    text-align: center;
+  }
+
+  .header__nav .list__item {
+    padding: 0.5rem 0;
+  }
+
+  /* Сайдбар отделён от main */
+  aside.grid__column--4--md {
+    margin-top: 2rem;
+  }
+
+  /* Карточки в сайдбаре не слипаются */
+  aside .card {
+    margin-bottom: 1.5rem;
+  }
+
+  aside .card:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Карточка «Разделы» — серая подложка, рамка, разделители */
+  aside .card--outlined {
+    background-color: #F8F9FA;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+  }
+
+  aside .card--outlined .list__item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #EEE;
+  }
+
+  aside .card--outlined .list__item:last-child {
+    border-bottom: 0;
+  }
+
+  /* Подписка — больше воздуха */
+  .card--filled .card__content {
+    padding: 1.5rem 1rem;
+  }
+
+  .card--filled .card__content form {
+    margin-top: 1.5rem;
+  }
+
+  .card--filled .card__content input[type="email"] {
+    margin-bottom: 1rem;
+  }
+
+  main h2,
+  main h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Видео и таблица не прижимаются к тексту */
+  main .table {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+/* Iframe-видео адаптивно */
+iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.gradient-back {
+  background: linear-gradient(135deg, #59176f, #0074D9);
+}
+
+.card__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table__cell {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.button{
+  border-radius: 8px;
+}
+
+pre {
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 0.5rem;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  max-width: 100%;
+}
+
